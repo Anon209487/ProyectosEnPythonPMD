@@ -5,6 +5,15 @@
 def main():
     # Código principal del programa
     print("Hola mundo")
+    param1 = 0
+    param2 = 0
+
+    while param1==param2 or param1<0 or param2<0 :
+        param1 = int(input("Por favor, introduce un número entero: "))
+        param2 = int(input("Por favor, introduce un número entero: "))
+
+    numerosEntreEnreros(param1, param2) 
+
 
 # Esto se asegura que el código dentro de main() se ejecute solo si este archivo 
 # se ejecuta directamente (no si es importado como un módulo en otro archivo).
@@ -214,15 +223,4 @@ def numerosEntreEnreros (param1,param2):
      for contador in range(param1,param2,1):
       print (contador , end=",")
 
-def main():
- param1 = 0
- param2 = 0
-
- while param1==param2 or param1<0 or param2<0 :
-    param1 = int(input("Por favor, introduce un número entero: "))
-    param2 = int(input("Por favor, introduce un número entero: "))
-
- numerosEntreEnreros(param1, param2) 
-if __name__ == "__main__":
-    main()
 
